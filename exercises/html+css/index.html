@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    header { /* 41. Create a Simple Header with Inline CSS */
+        background-color: lightblue; 
+        padding: 20px; 
+        text-align: center; 
+    }
+    .left { /* 42. Two-Column Layout (Float Method)*/
+        float: left; 
+        width: 46%; 
+        background: rgb(191, 208, 255); 
+        padding: 20px;
+    }
+    .right { 
+        float: right; 
+        width: 47%; 
+        background: lightyellow; 
+        padding: 20px;
+    }
+    img { /* 43. Responsive Image (CSS Max-Width) */
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    ul { /* 44. Navigation Bar (Basic) */
+        list-style-type: none; 
+        background: #fff563; 
+        padding: 0; 
+        margin: 0; 
+    } 
+    li { 
+        display: inline; 
+        margin-right: 20px; 
+    } 
+    a { 
+        color: rgb(82, 60, 1); 
+        text-decoration: none; 
+    }
+    .btn { /* 45. Styled Button with Hover Effect */
+        background: rgb(191, 208, 255); 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        cursor: pointer; 
+    } 
+    .btn:hover { 
+        background: rgb(191, 208, 255); 
+    }
+    form { /* 46. Simple Form Styling */
+        width: 700px; 
+        margin: 20px auto; 
+    } 
+    input, textarea { 
+        width: 98%; 
+        margin-bottom: 10px;   
+        padding: 8px; 
+    }
+    .card { /* 47. Card Layout (Manual) */
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        padding: 20px; 
+        width: 250px; 
+        margin: 10px auto; 
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.1); 
+    }
+    .modal { /* 48. Modal Simulation (Hide/Show with CSS) */
+        display: none; 
+        position: fixed; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        background: white; 
+        padding: 20px; 
+        border: 1px solid black; 
+    } 
+    .modal.show { 
+        display: block; 
+    }
+    .row { 
+      display: flex; 
+    } 
+    .col { /* 49. Grid Layout Using CSS Flexbox */
+        flex: 1; 
+        margin: 5px; 
+        padding: 20px; 
+        background: rgb(191, 208, 255); 
+    }
+    .dropdown { /* 50. Simple Dropdown Menu (CSS Hover) */
+        position: relative; 
+        display: inline-block; 
+    } 
+    .dropdown-content { 
+        display: none; 
+        position: absolute; 
+        background: white; 
+        border: 1px solid #ccc; 
+        min-width: 120px; 
+    } 
+    .dropdown:hover .dropdown-content { 
+        display: block; 
+    }
+    .center { /* 51. Centering Content with Flexbox */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+    }
+    header { /* 52. Sticky Header */
+        position: sticky; 
+        top: 0; 
+        background: rgb(191, 208, 255); 
+        padding: 15px; 
+    }
+    footer { /* 53. Fixed Footer  */
+        position: fixed; 
+        bottom: 0; 
+        width: 100%; 
+        background: gray; 
+        color: white; 
+        text-align: center; 
+        padding: 10px; 
+    }
+    .col { /* 54. Responsive Columns (Percentage Widths) */
+        float: left; 
+        width: 33.3%; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    .gallery { /*55. Image Gallery with Flexbox */
+        display: flex; 
+        flex-wrap: wrap; 
+    } 
+    .gallery img { 
+        width: 30%; 
+        margin: 1%; 
+    }
+     .card { /* 56. Profile Card Layout */
+        width: 250px; 
+        border: 1px solid rgb(191, 208, 255); 
+        border-radius: 5px; 
+        padding: 15px; 
+        text-align: center; 
+    } 
+    .card img { 
+        width: 100px; 
+        border-radius: 50%; 
+    }
+    .banner { /* 57. Simple Banner Section */
+        background: rgb(235, 234, 203); 
+        padding: 50px; 
+        text-align: center; 
+    }
+    nav { /* 58. Responsive Navbar with Flexbox  */
+        display: flex; 
+        justify-content: space-between; 
+        background: #3b2900; 
+        padding: 10px; 
+    }
+    nav a { 
+        color: white; 
+        margin: 0 10px; 
+        text-decoration: none; 
+    }
+    .pricing { /* 59. Pricing Table Layout */
+        display: flex; 
+        justify-content: center; 
+    } 
+    .plan { 
+        border: 1px solid #ccc; 
+        padding: 20px; 
+        margin: 10px; 
+        width: 200px; 
+        text-align: center; 
+    }
+    .sidebar { /* 60. Simple Sidebar Layout */
+        width: 200px; 
+        float: left; 
+        background: lightgray; 
+        height: 100vh; 
+        padding: 20px; 
+    } 
+    .content { 
+        margin-left: 220px; 
+        padding: 20px; 
+    } 
+    </style>
+</head>
+<body>
+<nav> 
+        <div>Logo</div> 
+            <div> 
+                <a href="#">Home</a> 
+                <a href="#">About</a> 
+            </div> 
+    </nav> 
+
+        <div class="center"> 
+        <h1>PORTFOLIO</h1> 
+    </div>
+ 
+    <footer>Arabella M.</footer>
+
+    <div class="dropdown"> 
+        <button>Menu</button> 
+        <div class="dropdown-content"> 
+            <p>Option 1</p> 
+            <p>Option 2</p> 
+        </div> 
+    </div>
+
+    <ul> 
+        <li><a href="#">Home</a></li> 
+        <li><a href="#">About</a></li> 
+        <li><a href="#">Contact</a></li> 
+    </ul>
+
+    <div class="banner"> 
+    <h1>Welcome to My Website</h1> 
+    <p>This is a hero banner</p>
+
+    <div class="left">Left Content</div> 
+    <div class="right">Right Content</div>
+
+    <div class="card"> 
+        <img src="days of summer.png"> 
+        <h3>Arabella</h3> 
+        <p>Web Developer</p> 
+    </div>
+
+    <div class="card"> 
+        <h3>PORTFOLIO</h3> 
+        <p>Arabella M.</p>
+    </div>
+
+    <header> 
+    <h1>My Website</h1> 
+    </header>
+
+    <div class="gallery">
+    <img src="https://via.placeholder.com/150"> 
+    <img src="https://via.placeholder.com/150"> 
+    <img src="https://via.placeholder.com/150">
+    
+    <form> 
+        <input type="text" placeholder="Name"> 
+        <input type="email" placeholder="Email"> 
+        <textarea placeholder="Message"></textarea> 
+        <button>Submit</button> 
+    </form>
+    <button class="btn">Click Me</button>
+
+    <button 
+        onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button> 
+    <div id="myModal" class="modal"> 
+        <p>This is a modal!</p> 
+    </div>
+
+    <div class="pricing"> 
+        <div class="plan">Basic</div> 
+        <div class="plan">Standard</div> 
+        <div class="plan">Premium</div> 
+    </div>
+
+    <div class="row"> 
+        <div class="col">About Me</div> 
+        <div class="col">Contacts</div> 
+        <div class="col">Home</div> 
+    </div>
+    <div class="col">Column 1</div> 
+    <div class="col">Column 2</div> 
+    <div class="col">Column 3</div>
+
+    <div class="sidebar">Sidebar</div> 
+    <div class="content">Home</div> 
+</body>
+</html>
