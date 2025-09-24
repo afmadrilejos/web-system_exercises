@@ -1,0 +1,144 @@
+body { /* Tag Selectors */
+    h1 { /* 1. Style an <h1> */
+        color: blue
+    }
+    p { /* 2. Style <p> */
+        font-size: 18px; 
+    }
+    h2 { /* 3. Style <h2> */
+        text-align: center; 
+    }
+    body { /* 4. Style <body> background */
+        background-color: lightgray; 
+    }
+    h3 { /* 5. Style <h3> wit uppercase text */
+        text-transform: uppercase; 
+    }
+    p  { /* 6. Style <p> with line-height */
+        line-height: 1.6; 
+    } 
+    a { /* 7. Style <a> links */
+        color: red; 
+        text-decoration: none; 
+    }
+    ul { /* 8. Style <ul> list */
+        list-style-type: square; 
+    } 
+    ol { /* 9. Style <ol> numbers */
+        list-style-type: upper-roman; 
+    }
+    li { /* 10. Style <li> items */
+        margin: 5px; 
+    } 
+    table { /* 11. Style <table> borders */
+        border: 1px solid black; 
+    }
+    th { /* 12. Style <th> header */
+        background-color: lightblue; 
+    }
+    td { /* 13. Style <td> cells */
+        padding: 10px; 
+    }
+    img { /* 14. Style <img> */
+        width: 200px; 
+        border-radius: 10px; 
+    }
+    button { /* 15. Style <button> */
+        background-color: green; 
+        color: white; 
+        padding: 8px; 
+    }
+    form { /* 16. Style <form> border */
+        border: 1px solid gray; 
+        padding: 15px; 
+    } 
+    input { /* 17. Style <input> fields */
+        border: 2px solid blue; 
+    }
+    textarea { /* 18. Style <textarea> */
+        width: 300px; 
+        height: 100px; 
+    } 
+    audio { /* 19. Style <audio> */
+        width: 250px; 
+    }
+    video { /* 20. Style <video> */
+        border: 5px solid black; 
+    }
+    
+    /* ID Selectors */
+    #main-title { /* 21. Style <h1> by ID */
+        color: darkred; 
+        font-size: 30px; 
+    }
+    #intro-text { /* 22. Style <p> by ID */
+        font-style: italic; 
+    }
+    #student-table { /* 23. Style a table by ID */
+        border-collapse: collapse; 
+    }
+    #profile-pic { /* 24. Style image by ID */
+        border-radius: 50%; 
+    } 
+    #submit-btn { /* 25. Style button by ID */
+        background-color: orange; 
+        padding: 10px; 
+    }
+    #container { /* 26. Style div by ID */
+        margin: 20px; 
+        padding: 20px; 
+        background-color: #eee; 
+    }
+    #email-field { /* 27. Style input by ID */
+        border: 1px solid red; 
+    }
+    #home-link { /* 28. Style link by ID */
+        color: purple; 
+    }
+    #login-form { /* 29. Style form by ID */
+        background: #f9f9f9; 
+        padding: 15px; 
+    }
+    #footer-text { /* 30. Style heading by ID */
+        text-align: right; 
+    }
+
+    /* Class Selectors */
+    .paragraph { /* 31. Style multiple <p> with class */
+        font-family: Arial, sans-serif; 
+    }
+    .title { /* 32. Style headings with class */
+        color: navy; 
+    }
+    .btn { /* 33. Style buttons class */
+        background-color: teal; 
+        color: white; 
+        padding: 10px 15px; 
+    }
+    .rounded-img { /* 34. Style images with class */
+        border-radius: 15px; 
+    }
+    .card { /* 35. Style div containers */
+        border: 1px solid #ccc; 
+        padding: 20px; 
+        margin: 10px; 
+    }
+    .highlight { /* 36. Style highlighted text */
+        background-color: yellow; 
+    }
+    .nav-link { /* 37. Style navigation links */
+        color: darkgreen; 
+        margin-right: 15px; 
+    } 
+    .list-item { /* 38. Style list items */
+        font-weight: bold; 
+    }
+    .input-field { /* 39. Style form inputs */
+        border: 2px solid gray; 
+        padding: 5px;
+    }
+    .footer-note { /* 40. Style footer text */
+        font-size: 12px; 
+        color: gray; 
+    } 
+}
