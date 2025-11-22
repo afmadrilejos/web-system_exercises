@@ -2,7 +2,7 @@
     <label>First Name: <input type="text" name="fname"></label><br>
     <label>Last Name: <input type="text" name="lname"></label><br>
     <button type="submit">Submit</button>
-</form>
+</form> <!-- a simple html form to submit a name -->
 <hr>
 
 <?php

@@ -1,11 +1,9 @@
-<?php
-?>
-<form method="POST" action="">
+<form method="POST" action=""> 
     <input type="text" name="age" placeholder="Enter age">
     <button type="submit">Search</button>
-</form>
+</form> <!-- a simple html form to search age -->
 <hr>
 <?php
 $age = $_POST['age'] ?? '';
-$sql = "SELECT * FROM students WHERE age = $age"; //replace wrong variable name to this
+$sql = "SELECT * FROM students WHERE age = $age"; //correct spelling of variable
 ?>
